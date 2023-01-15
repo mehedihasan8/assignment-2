@@ -199,6 +199,7 @@ nav ul {
 .sponspors {
     margin-top: 80px;
     margin-bottom: 120px;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
 }
@@ -214,4 +215,44 @@ nav ul {
     justify-content: center;
     align-items: center;
     background-color: #FFF4E7;
+}
+
+
+@Media screen and (max-width: 576px) {
+  .our-feature,
+  .experience,
+  .sponspors,
+  .nav-hero ,  nav ul {
+    flex-direction: column;
+  }
+    .feature-img {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  .header-deatle-title {
+  font-size: 45px;
+}
+.feature-info ,.client-title {
+  text-align: center;
+}
+.experience-disceripton ,
+.client-disceirption {
+  text-align: center;
+  width: 100%;
+}
+
+.experience-img img {
+  height: 100%;
+  width: 100%;
+}
+.sponspors img {
+  text-align: center;
+  margin: 20px 0;
+  height: 50%;
+  width: 50%;
+
+}
+.images img {
+  height: 100%;
+  width: 100%;
+}
 }
