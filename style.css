@@ -89,7 +89,8 @@ nav ul {
 }
 .feature-img img {
   height: 332px;
-  width: 332px;
+  width: 342px;
+
 }
 .feature-title {
   line-height: 60px;
@@ -150,109 +151,164 @@ nav ul {
   line-height: 26px;
 }
 .experience-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ff900e;
+  color: #fff;
+  height: 150px;
+  width: 220px;
   position: absolute;
-  right: 600px;
+  right: 0;
+  left: 0;
   bottom: 0;
   margin: auto;
+}
+.experience-title-btn {
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
 /* client section  */
 .client {
-    margin-top: 160px;
+  margin-top: 160px;
 }
-.client-title{
-    font-size: 45px;
-    padding-bottom: 20px;
+.client-title {
+  font-size: 45px;
+  padding-bottom: 20px;
 }
-.client-disceirption{
-    padding-bottom: 20px;
-    font-size: 16px;
-    line-height: 26px;
-    width: 50%;
+.client-disceirption {
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 50%;
 }
 .client-count {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
 }
 .client-box {
-    margin-top: 120px;
-    text-align: center;
+  margin-top: 120px;
+  text-align: center;
   border: 1px solid #ff900e;
   width: 220px;
   border-radius: 5px;
 }
 .client-box img {
-    margin-top: 40px;
-    width: 40px;
+  margin-top: 40px;
+  width: 40px;
 }
-.client-box-title{
-    padding: 10px 0;
-    font-size: 40px;
+.client-box-title {
+  padding: 10px 0;
+  font-size: 40px;
 }
-.client-box-disceription{
-    padding-bottom: 40px;
-    font-size: 20px;
+.client-box-disceription {
+  padding-bottom: 40px;
+  font-size: 20px;
 }
 
 .sponspors {
-    margin-top: 80px;
-    margin-bottom: 120px;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 .sponspors img {
-    filter: brightness(10%);
-
+  filter: saturate(8%);
 }
 
 .footer {
-    height: 80px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF4E7;
+  height: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff4e7;
 }
 
-
-@Media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .our-feature,
   .experience,
   .sponspors,
-  .nav-hero ,  nav ul {
+  .nav-hero,
+  .client-count,
+  nav ul {
     flex-direction: column;
   }
-    .feature-img {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .feature-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .header-deatle-title {
-  font-size: 45px;
-}
-.feature-info ,.client-title {
-  text-align: center;
-}
-.experience-disceripton ,
-.client-disceirption {
-  text-align: center;
-  width: 100%;
-}
+    font-size: 45px;
+  }
+  .feature-info,
+  .client-title {
+    text-align: center;
+  }
+  .experience-disceripton,
+  .client-disceirption {
+    text-align: center;
+    width: 100%;
+  }
+  .experience-sub-title{
+    font-size: 18px;
+  }
+  .experience-disceripton{
+    font-size: 15px;
+  }
+  .experince-items {
+    padding: 10px;
+  }
+  .client-count{
+    align-items: center;
+  }
+  .client-box{
+    margin-top: 80px;
+  }
 
-.experience-img img {
-  height: 100%;
-  width: 100%;
+  .experience-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .sponspors img {
+    text-align: center;
+    margin: 20px 0;
+    height: 30%;
+    width: 30%;
+  }
+  .experience-title-btn{
+    font-size: 30px;
+  }
+  .experience-btn {
+    padding: 5px 10px;
+    height: 60%;
+    width: 40%;
+    position:static;
+  }
+  .images img {
+    height: 100%;
+    width: 100%;
+  }
+  .loge{
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  nav ul {
+    text-align: center;
+  }
+  .footer{
+    text-align: center;
+  }
+  .feature-img img {
+  margin-left:0px;
+  margin-top: px;
 }
-.sponspors img {
-  text-align: center;
-  margin: 20px 0;
-  height: 50%;
-  width: 50%;
-
-}
-.images img {
-  height: 100%;
-  width: 100%;
+.feature-img{
+  margin-left: 0;
 }
 }
